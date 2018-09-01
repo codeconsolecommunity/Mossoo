@@ -1,0 +1,46 @@
+ {% extends "base.html" %} {% block content %} {% load staticfiles %}
+
+<div>
+    <div class="itembanner ui content">
+        <div>
+            <h1>Vous êtes sur la catégorie <span> {{ category}} </span> </h1>
+        </div>
+        <div class="othercategory">
+            <h1>voir aussi :</h1>
+            <div class="ui centred buttons">
+                <button class="ui red basic button">One</button>
+                <div class="or" data-text="ou"></div>
+
+                <button class="ui blue basic button">Two</button>
+                <div class="or" data-text="ou"></div>
+
+                <button class="ui green basic button">Three</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="ui container">
+    <div class="ui stackable two column grid">
+
+        {% if shoes %} {% for shoe in shoes %}
+        <figure class="column mc-item mc-item--flipOutUp">
+            <img class="mc-item__image" src="{{ shoe.img.url }}" alt="...">
+            <figcaption class="mc-item__caption">
+                <h3> <span>model : </span> {{ shoe.model }}</h3>
+                <h4> <span> prix : </span>{{ shoe.price }}</h4>
+                <h4> <span> boutique :  </span>{# shoe.shop #}</h4>
+                <h4> <span> marque : </span>{{ shoe.mark }}</h4>
+                <h4><span>sexe : </span> {{ shoe.sex }} </h4>
+            </figcaption>
+        </figure>
+
+
+        {% endfor %}</div>
+    {% else %}
+
+    <h1>nothing found!</h1>
+    {% endif %}
+</div>
+{% endblock content %}

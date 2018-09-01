@@ -1,0 +1,112 @@
+#container {
+    padding: 30vh;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    background: linear-gradient(-90deg, pink, dodgerblue) !important;
+    flex-wrap: wrap !important;
+}
+
+#container * {
+    background: none !important;
+}
+
+.column img {
+    width: 80% !important;
+    height: 180px !important;
+    cursor: pointer !important;
+}
+
+#container div {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+}
+
+#container div h1 {
+    text-align: center;
+    font-weight: bold !important;
+    color: white !important;
+    font-size: 250% !important;
+}
+
+#container div.results {
+    display: none !important;
+    box-shadow: none !important;
+}
+
+#container div .ui.icon.input * {
+    color: white !important;
+}
+
+#container div h1 span {
+    font-family: 'Ranga', cursive !important;
+    text-transform: uppercase !important;
+}
+
+#category {
+    padding-top: 5% !important;
+    width: 100% !important;
+}
+
+#category .column {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+#category .ui.popup {
+    background: linear-gradient(-90deg, pink, dodgerblue) !important;
+    color: white;
+    font-weight: bold;
+}
+
+#searchButton {
+    margin: 1% !important;
+    background: linear-gradient(90deg, pink, rgba(255, 192, 203, 0.068)) !important;
+    transition-duration: 1s !important;
+}
+
+#tourButton {
+    margin: 1% !important;
+    background: linear-gradient(-90deg, dodgerblue, rgba(30, 143, 255, 0.103)) !important;
+    transition-duration: 1s !important;
+}
+
+figcaption {
+    background: linear-gradient(-90deg, pink, dodgerblue) !important;
+}
+
+figcaption * {
+    text-align: left;
+    padding-left: 0.5% !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+figcaption span {
+    color: pink !important;
+    text-transform: capitalize !important;
+}
+
+div.itembanner {
+    background: linear-gradient(-90deg, pink, dodgerblue) !important;
+    margin-bottom: 5% !important;
+    padding: 20vh !important;
+}
+
+div.itembanner h1 {
+    text-align: center !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+div.itembanner h1 span {
+    color: goldenrod !important;
+}
+
+.othercategory {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}

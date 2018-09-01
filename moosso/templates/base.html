@@ -1,0 +1,33 @@
+{% load staticfiles %}
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Hanalei+Fill|Ranga" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="{% static  'assets/mocassin.css/css/mocassin-r.css' %}">
+
+    <link rel="stylesheet" href="{% static  'assets/semantic.css' %}">
+    <link rel="stylesheet" href="{% static  'assets/hover.css' %}">
+    <link rel="stylesheet" href="{% static  'css/main.css' %}">
+
+    <script src="{% static 'js/jquery.js'  %}"></script>
+    <script src="{% static 'assets/semantic.js'  %}"></script>
+    <script src="{% static 'assets/mocassin.css/js/mocassin.js'  %}"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    {% block content %} {% endblock content %}
+
+</body>
+<script src=" {% static 'js/main.js' %} "></script>
+
+</html>

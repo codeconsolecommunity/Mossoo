@@ -1,0 +1,71 @@
+ {% extends "base.html" %} {% block content %} {% load staticfiles %}
+<div id="container">
+    <div class="ui container">
+        <h1>Welcome to <span>Moosso</span></h1>
+        <div class="ui category search">
+            <div class="ui big icon input">
+                <input class="prompt" type="text" placeholder="recherche par modele..." autofocus>
+                <i class="search icon"></i>
+            </div>
+            <div class="results"></div>
+        </div>
+
+
+    </div>
+    <button id="searchButton" class=" circular fluid ui button">Chercher</button>
+    <button id="tourButton" class=" circular fluid ui button">Faire un tour</button>
+
+</div>
+<div id="category" class="ui container">
+    <div class="ui center aligned content">
+
+        <div class="ui stackable three column grid">
+            <div class="column">
+
+                <img src=" {% static 'img/escarpin.jpg' %} " alt="" class="hvr-grow" data-content="talons">
+
+            </div>
+
+
+            <div class="column">
+
+                <img src=" {% static 'img/bottine.jpg' %} " class="hvr-grow" alt="" data-content="bottines">
+            </div>
+            <div class="column">
+                <img src=" {% static 'img/sandale.jpeg' %} " class="hvr-grow" alt="" data-content="sandales">
+            </div>
+        </div>
+        <div class="ui stackable three column grid">
+            <div class="column">
+                <img src=" {% static 'img/ballerine.jpg' %} " class="hvr-wobble-to-top-right" alt="" data-content="ballerine">
+            </div>
+            <div class="column">
+                <img src=" {% static 'img/sport.jpg' %} " class="hvr-wobble-to-top-right" alt="" data-content="chaussures de sport">
+            </div>
+            <div class="column">
+                <img src=" {% static 'img/homme.jpg' %} " class="hvr-wobble-to-top-right" alt="" data-content="chaussures pour hommes">
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+<script>
+    $('img')
+        .popup({
+            inline: true,
+            hoverable: true,
+            position: 'top left',
+            delay: {
+                show: 100,
+                hide: 5000
+            }
+        });
+
+
+
+    $('img').click(goToCategory);
+</script>
+{% endblock content %}
